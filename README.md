@@ -1,6 +1,9 @@
+
 # Fame Estate Scroll Animation
 
 A modern, premium scroll animation built for a luxury real estate concept. This project uses smooth scrolling and complex scroll-linked animations to deliver an effortless digital experience, drawing inspiration from timeless spaces.
+
+<img width="1920" height="1080" alt="Screenshot (520)" src="https://github.com/user-attachments/assets/598fe091-9d8f-4f3a-a4b4-fa0f98d18055" />
 
 ## 🚀 Technologies Used
 - **HTML5 & CSS3** for structural layout and styling.
