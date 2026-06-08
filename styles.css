@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+    --base-100: #f0f0e6;
+    --base-200: #991f1f;
+    --base-300: #0f0f0f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--base-100);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1,
+h3,
+p {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h1 {
+    font-size: clamp(3rem, 4vw, 5rem);
+}
+
+h3 {
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+p {
+    font-size: 1.1rem
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.hero-bg,
+.hero-content,
+.hero-revealer,
+.hero-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+}
+
+.hero-img,
+.hero-outro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(0);
+    will-change: transform;
+}
+
+.hero-content,
+.hero-outro-content {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--base-100);
+}
+
+.hero-content h1,
+.hero-outro-content h1 {
+    width: 65%;
+}
+
+.hero-outro-content {
+    background-color: var(--base-200);
+}
+
+.hero-bg {
+    transform: scale(1.5);
+}
+
+.hero-revealer {
+    background-color: var(--base-200);
+    clip-path: polygon(49.5% 50%, 50.5% 50%, 50.5% 50%, 49.5% 50%);
+}
+
+.hero-img {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    will-change: clip-path;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    padding: 2rem;
+    background-color: var(--base-100);
+    color: var(--base-300);
+    margin-top: 500svh;
+    z-index: 1;
+}
+
+.about-content {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .hero-content h1,
+    .hero-outro-content h1,
+    .about-content {
+        width: 100%;
+    }
+}
